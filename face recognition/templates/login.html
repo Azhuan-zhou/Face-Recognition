@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logging in </title>
+    <style>
+         .box{
+            background-image: url("../static/background.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+             position:fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height:100%;
+            min-width: 1000px;
+            z-index:-10;
+            zoom: 1;
+            background-color: #fff;
+        }
+         .name {
+             width: 200px;
+             height: 50px;
+             border: 1px solid #139be1;
+             border-radius: 5px;
+             color: tomato;
+             font-size: 15px;
+             font-weight: bold;
+             background-color: #faf1d8;
+             text-indent: 10px;
+         }
+    </style>
+</head>
+<body>
+<div class="box">
+    <form method=POST style="margin-top: 100px" action={{url_for('login')}}>
+        <label for="user_name" style="margin-left: 550px;font-size: 200%">
+            Your name:
+            <input class="name" type="text" name="user_name" id="user_name"
+                   style="width: 250px;height: 20px;
+                   ">
+        </label>
+            <input  type="submit" value="submit"
+            style="margin-left: 40px;">
+    </form>
+</div>
+</body>
+</html>
